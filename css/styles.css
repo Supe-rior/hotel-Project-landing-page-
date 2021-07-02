@@ -91,8 +91,8 @@ header::before{
   margin-bottom: 20px;
 }
 .home button:hover{
-  transition-property: all;
-  transition-duration: 1s;
+  transition-property: background-color;
+  transition-duration: 0.5s;
   background-color: red;
   cursor: pointer;
 }

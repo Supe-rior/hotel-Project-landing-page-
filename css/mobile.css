@@ -32,3 +32,7 @@ header ul{
 nav{
   margin-left: 12px;
 }
+.service-pic{
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Staatliches', cursive;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+/*navigation*/
+header{
+  display: flex;
+  position: sticky;
+}
+header .logo{
+  width: 50px;
+  height: 50px;
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+}
+ul li{
+  display: inline-block;
+  list-style: none;
+  margin:15px 0px 0px 23px;
+  padding-top: 6px;
+}
+ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 0px 15px 0 15px;
+  border-radius: 11px;
+  color: white;
+}
+ul li a:hover{
+  background-color: white;
+  color: black;
+  transition-property: background-color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+header::before{
+  content: " ";
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+}
+/*navigation-end*/
+/*service*/
+.home{
+  display: flex;
+  position: relative;
+  height: 400px;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 0;
+  background-color: rgba(0,0,0,0.5)
+}
+.home::before{
+  content: " ";
+  background: url('https://images.unsplash.com/photo-1490990813269-10586274747f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjI1MTQ4MjA1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600') no-repeat center ;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+  opacity: 0.95;
+  position: absolute;
+}
+.home button{
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: none;
+}
+.home button a{
+  text-decoration: none;
+  color: black;
+}
+.home h1{
+  margin-bottom: 20px;
+}
+.home button:hover{
+  transition-property: all;
+  transition-duration: 1s;
+  background-color: red;
+  cursor: pointer;
+}
+.service{
+
+}
+.service h2{
+  text-align: center;
+  margin-top: 10px;
+}
+.service-pic{
+  height: 100px;
+  width: 200px;
+}
+.service-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 42px;
+  margin-right: 42px;
+  margin-top: 26px;
+  flex-wrap: nowrap;
+}
+.service-items{
+  width: 20%;
+  display: block;
+  border: 2px solid red;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  border-radius: 11px;
+  flex-wrap: nowrap;
+  background-color: rgba(239, 110, 30, 0.5);
+  margin-bottom: 20px;
+}
+/*service ends*/
+/*partners*/
+.partner{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.partner h2{
+  padding-top: 22px;
+  color: white;
+  text-align: center;
+}
+.partner-logo{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.testimonial{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 113px;
+  margin-right: 113px;
+  margin-top: 38px;
+}
+.partner::before{
+  content: " ";
+  background: url('../bg.jpg');
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+/*partners ends*/
+.contact h2{
+  padding-top: 22px;
+  text-align: center;
+}
+.contact{
+  position: relative;
+  width: 100%;
+  color: white;
+  background-color: rgba(0,0,0,0.5)
+}
+.contact::before{
+  content: " ";
+  background: url('../contact.jpg') no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.form1{
+  display: flex;
+  flex-direction: column;
+  width: 30%
+}
+.label-text{
+  padding-top: 10px;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+input,textarea{
+  outline: none;
+  border-radius: 1px;
+  border: none;
+}
+textarea{
+  margin-bottom: 20px;
+}
+.submit{
+  margin-bottom: 20px;
+  border-radius: 11px;
+}
+.submit:hover{
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: red;
+}
+/*contact-ends*/
+/*footer*/
+.center{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+}
+.center p{
+  text-align: center;
+  color: white;
+}
+span{
+  margin-left: 20px;
+}
+/*footer ends*/
